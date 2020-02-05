@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A95F1F0F23EB2189001FA203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F0E23EB2189001FA203 /* AppDelegate.swift */; };
+		A95F1F1123EB2189001FA203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F1023EB2189001FA203 /* ViewController.swift */; };
+		A95F1F1423EB2189001FA203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95F1F1223EB2189001FA203 /* Main.storyboard */; };
+		A95F1F1623EB2190001FA203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95F1F1523EB2190001FA203 /* Assets.xcassets */; };
+		A95F1F1923EB2190001FA203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95F1F1723EB2190001FA203 /* LaunchScreen.storyboard */; };
+		A95F1F2423EB2190001FA203 /* TartanDataPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F2323EB2190001FA203 /* TartanDataPickerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A95F1F2023EB2190001FA203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A95F1F0323EB2189001FA203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A95F1F0A23EB2189001FA203;
+			remoteInfo = TartanDataPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A95F1F0B23EB2189001FA203 /* TartanDataPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TartanDataPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95F1F0E23EB2189001FA203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A95F1F1023EB2189001FA203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A95F1F1323EB2189001FA203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A95F1F1523EB2190001FA203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A95F1F1823EB2190001FA203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A95F1F1A23EB2190001FA203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95F1F1F23EB2190001FA203 /* TartanDataPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TartanDataPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95F1F2323EB2190001FA203 /* TartanDataPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanDataPickerTests.swift; sourceTree = "<group>"; };
+		A95F1F2523EB2190001FA203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A95F1F0823EB2189001FA203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95F1F1C23EB2190001FA203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A95F1F0223EB2189001FA203 = {
+			isa = PBXGroup;
+			children = (
+				A95F1F0D23EB2189001FA203 /* TartanDataPicker */,
+				A95F1F2223EB2190001FA203 /* TartanDataPickerTests */,
+				A95F1F0C23EB2189001FA203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A95F1F0C23EB2189001FA203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A95F1F0B23EB2189001FA203 /* TartanDataPicker.app */,
+				A95F1F1F23EB2190001FA203 /* TartanDataPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A95F1F0D23EB2189001FA203 /* TartanDataPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A95F1F0E23EB2189001FA203 /* AppDelegate.swift */,
+				A95F1F1023EB2189001FA203 /* ViewController.swift */,
+				A95F1F1223EB2189001FA203 /* Main.storyboard */,
+				A95F1F1523EB2190001FA203 /* Assets.xcassets */,
+				A95F1F1723EB2190001FA203 /* LaunchScreen.storyboard */,
+				A95F1F1A23EB2190001FA203 /* Info.plist */,
+			);
+			path = TartanDataPicker;
+			sourceTree = "<group>";
+		};
+		A95F1F2223EB2190001FA203 /* TartanDataPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A95F1F2323EB2190001FA203 /* TartanDataPickerTests.swift */,
+				A95F1F2523EB2190001FA203 /* Info.plist */,
+			);
+			path = TartanDataPickerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A95F1F0A23EB2189001FA203 /* TartanDataPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95F1F2823EB2190001FA203 /* Build configuration list for PBXNativeTarget "TartanDataPicker" */;
+			buildPhases = (
+				A95F1F0723EB2189001FA203 /* Sources */,
+				A95F1F0823EB2189001FA203 /* Frameworks */,
+				A95F1F0923EB2189001FA203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TartanDataPicker;
+			productName = TartanDataPicker;
+			productReference = A95F1F0B23EB2189001FA203 /* TartanDataPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A95F1F1E23EB2190001FA203 /* TartanDataPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95F1F2B23EB2190001FA203 /* Build configuration list for PBXNativeTarget "TartanDataPickerTests" */;
+			buildPhases = (
+				A95F1F1B23EB2190001FA203 /* Sources */,
+				A95F1F1C23EB2190001FA203 /* Frameworks */,
+				A95F1F1D23EB2190001FA203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A95F1F2123EB2190001FA203 /* PBXTargetDependency */,
+			);
+			name = TartanDataPickerTests;
+			productName = TartanDataPickerTests;
+			productReference = A95F1F1F23EB2190001FA203 /* TartanDataPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A95F1F0323EB2189001FA203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jeroen Dunselman";
+				TargetAttributes = {
+					A95F1F0A23EB2189001FA203 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A95F1F1E23EB2190001FA203 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A95F1F0A23EB2189001FA203;
+					};
+				};
+			};
+			buildConfigurationList = A95F1F0623EB2189001FA203 /* Build configuration list for PBXProject "TartanDataPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A95F1F0223EB2189001FA203;
+			productRefGroup = A95F1F0C23EB2189001FA203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A95F1F0A23EB2189001FA203 /* TartanDataPicker */,
+				A95F1F1E23EB2190001FA203 /* TartanDataPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A95F1F0923EB2189001FA203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95F1F1923EB2190001FA203 /* LaunchScreen.storyboard in Resources */,
+				A95F1F1623EB2190001FA203 /* Assets.xcassets in Resources */,
+				A95F1F1423EB2189001FA203 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95F1F1D23EB2190001FA203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A95F1F0723EB2189001FA203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95F1F1123EB2189001FA203 /* ViewController.swift in Sources */,
+				A95F1F0F23EB2189001FA203 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95F1F1B23EB2190001FA203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95F1F2423EB2190001FA203 /* TartanDataPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A95F1F2123EB2190001FA203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A95F1F0A23EB2189001FA203 /* TartanDataPicker */;
+			targetProxy = A95F1F2023EB2190001FA203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A95F1F1223EB2189001FA203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95F1F1323EB2189001FA203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A95F1F1723EB2190001FA203 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95F1F1823EB2190001FA203 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A95F1F2623EB2190001FA203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A95F1F2723EB2190001FA203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A95F1F2923EB2190001FA203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TartanDataPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.TartanDataPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A95F1F2A23EB2190001FA203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TartanDataPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.TartanDataPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A95F1F2C23EB2190001FA203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TartanDataPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.TartanDataPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TartanDataPicker.app/TartanDataPicker";
+			};
+			name = Debug;
+		};
+		A95F1F2D23EB2190001FA203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TartanDataPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.TartanDataPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TartanDataPicker.app/TartanDataPicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A95F1F0623EB2189001FA203 /* Build configuration list for PBXProject "TartanDataPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95F1F2623EB2190001FA203 /* Debug */,
+				A95F1F2723EB2190001FA203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95F1F2823EB2190001FA203 /* Build configuration list for PBXNativeTarget "TartanDataPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95F1F2923EB2190001FA203 /* Debug */,
+				A95F1F2A23EB2190001FA203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95F1F2B23EB2190001FA203 /* Build configuration list for PBXNativeTarget "TartanDataPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95F1F2C23EB2190001FA203 /* Debug */,
+				A95F1F2D23EB2190001FA203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A95F1F0323EB2189001FA203 /* Project object */;
+}
