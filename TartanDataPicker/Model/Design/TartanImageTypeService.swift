@@ -17,7 +17,6 @@ class TartanImageTypeService {
     let client:Entry?
     var layOut:LayOut?
     var tartan:Tartan
-    var sTypes:[(Int, UIColor)] = [(Int, UIColor)]()
     
     init(_ entry: Entry) {
         self.client = entry
@@ -57,11 +56,11 @@ extension TartanImageTypeService {
     func colorSet() -> UIImage {
         
         let colors:Set<ColorCode> = self.tartan.colorTypes.valuedAsSet
-        let stringedTypes:[(Int, UIColor)] = colors.enumerated().reduce([]) {ar , el in
+        let zones:[(Int, UIColor)] = colors.enumerated().reduce([]) {ar , el in
             return ar + [(1, el.element.colorForCode())] }
-            .mirror() as! [(Int, UIColor)]
+//            .mirror() as! [(Int, UIColor)]
         
-        let result:UIImage = UIImage(zones:stringedTypes)! //zones: [(Int, String)])
+        let result:UIImage = UIImage(zones2:zones)! //zones: [(Int, String)])
         self.images[ImageType.colorSet] = result
 
 //        _ = self.design()
@@ -73,11 +72,11 @@ extension TartanImageTypeService {
             return i }
         
         self.layOut = LayOut(tartan: self.tartan)
-        self.sTypes = (self.layOut?.design.enumerated().reduce([]) {ar, el in
+        let zones:[(Int, UIColor)] = (self.layOut?.design.enumerated().reduce([]) {ar, el in
             return ar + [(1, el.element.colorForCode())] })!   //            .mirror()
         
-        if sTypes.count > 0 {
-            let result:UIImage = UIImage(zones:sTypes)!
+        if zones.count > 0 {
+            let result:UIImage = UIImage(zones:zones)!
             //            DispatchQueue.main.async() { () -> Void in
             //                print("sTypes \(self.sTypes)")
             self.images[ImageType.design] = result
@@ -98,7 +97,44 @@ extension TartanImageTypeService {
         return images[ImageType.tartan]
     }
 }
-
+extension UIImage {
+    
+    public convenience init?(zones2: [(Int, UIColor)]) {
+        let imgRect = CGRect(origin: .zero, size: CGSize(width: 100, height: 100))
+        
+        let xy = 100 / zones2.count //* (100 / zones.count)
+        
+        func runShapeAt(_ at:Int, _ color:UIColor) {
+            
+            color.setFill()
+            fillShape(current: Coordinate(at * xy, 0))
+        }
+        
+        func fillShape(current: Coordinate) {
+            //Draw 1 layout shap
+            let one:CGFloat = CGFloat(xy)
+            let rSize = CGSize(width: one, height: CGFloat(xy) )
+            
+            let rect = CGRect(origin: CGPoint(x:current.x, y:current.y), size: rSize)
+            UIRectFill(rect)
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(imgRect.size, false, 0.0)
+        
+        _ = (0..<zones2.count).map { i in
+            //            print("imaging colorShape for.. \()")
+            runShapeAt(i, zones2[i].1)
+        }
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        guard let cgImage = image?.cgImage else {
+            return nil
+            
+        }
+        self.init(cgImage: cgImage)
+    }
+}
 extension UIImage {
     
     public convenience init?(zones: [(Int, UIColor)]) {

@@ -11,12 +11,12 @@ import Foundation
 class FileParser {
     let result:ParsedTextFile?
     init(file: DataFileInfo) {
-        self.result = ParsedTextFile(fileName: file.name, fileType: file.type, numberOfComponentsPerElement: file.elementSize)
+        self.result = ParsedTextFile(fileName: file.name, fileType: file.type, numberOfComponentsPerElement: file.recordSize)
     }
 }
 
 struct DataFileInfo {
-    let name = "tartandefs components as row", type = "rtf", elementSize = 3
+    let name = "tartandefs components as row", type = "rtf", recordSize = 3
     enum Components {
         case title, id, definition
     }

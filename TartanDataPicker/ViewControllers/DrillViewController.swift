@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class DrillViewController: UITableViewController {
+    
     func presentDetail(_ viewControllerToPresent: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.25
