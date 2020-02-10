@@ -184,6 +184,7 @@
 		A9A5A6BE23EEF380001CF16D /* niu */ = {
 			isa = PBXGroup;
 			children = (
+				A9DA655F23F0A86F00DF0F4B /* ZPattern.swift */,
 				A917AE1E23ED97250037D15B /* AssetViewController.swift */,
 				A945360D23EE32970074B2B0 /* ImageRequest.swift */,
 				A9C635D123EDF300002EDBAA /* TartanImageService.swift */,
@@ -199,7 +200,6 @@
 				A945360F23EE32D40074B2B0 /* LayOut.swift */,
 				A945361123EE33C30074B2B0 /* Tartan.swift */,
 				A9DA656123F0A87800DF0F4B /* ColorMap.swift */,
-				A9DA655F23F0A86F00DF0F4B /* ZPattern.swift */,
 			);
 			path = Tartan;
 			sourceTree = "<group>";

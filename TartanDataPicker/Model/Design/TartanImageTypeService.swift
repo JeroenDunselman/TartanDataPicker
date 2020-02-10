@@ -28,11 +28,6 @@ class TartanImageTypeService {
 extension TartanImageTypeService {
     
     func preferredImage() -> UIImage {
-//        if images[ImageType.colorSet] != nil && images[ImageType.design] == nil {
-////            DispatchQueue.global(qos: .default).async {
-//                _ = self.design()
-////            }
-//        }
         for t in ImageType.allCases {
             if let image:UIImage = self.images[t]  {
                 print("\(t.rawValue)")
