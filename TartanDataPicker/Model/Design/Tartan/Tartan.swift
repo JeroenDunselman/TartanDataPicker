@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class Tartan {
-    var colors:[Int] = [Int](), sizes:[Int] = [Int]()
+    var colors:[Int] = [Int](), sizes:[Int] = []
     var colorMap:ColorMap?
     var e: Set<String> = []
 
@@ -25,28 +25,48 @@ class Tartan {
     
     var colorCodes:[String] = []
     var colorTypes:[ColorCode] = []
+    var orderedColorCodes:[ColorCode] = [], colorScore:[ColorCode:(zoneCount:Int, colorCount:Int)] = [:]
     
     init() {}
 
     convenience init(colorCodes: [ColorCode], sizes: [Int], palet:ColorMap) {
         self.init()
         
-//        self.colorTypes = convertToColorCodeEnum(colorCodes)
         self.colorTypes = colorCodes
         self.colorMap = palet
         
         self.sizes = sizes
         self.sumSizes = self.sizes.map { $0 }.reduce(0, +)
+        analyze()
 //        print("zones/size: \(self.sumSizes)/\(sizes.count)")
     }
 
+    func analyze() {
+        var lastOccurrence:[ColorCode:Int] = [:]
+        _ = colorTypes.enumerated().map {i, e in lastOccurrence[e] = i}
+        let sorted:[Int] = lastOccurrence.values.sorted().reversed()
+        self.orderedColorCodes = sorted.reduce([]) { ar, el in
+            return ar + [lastOccurrence.allKeys(forValue: el)[0]] }
+        
+        _ = self.orderedColorCodes.map { color in
+            var zoneCount:Int = 0
+            var colorCount:Int = 0
+            _ = self.colorTypes.enumerated().map { i, e in
+                if e == color {
+                    zoneCount = zoneCount + 1
+                    colorCount = colorCount + sizes[i]
+                }
+            }
+            colorScore[color] = ((zoneCount:zoneCount, colorCount:colorCount))
+        }
+    }
+    
     init(colors:[Int], sizes:[Int]) {
         self.colors = colors
         self.createColorPattern()
         
         self.sizes = sizes
         self.sumSizes = self.sizes.map { $0 }.reduce(0, +)
-        //        self.createColorPattern()
     }
     
     init(sett:[Int]) { //[intThreadColor]
@@ -63,7 +83,11 @@ class Tartan {
         self.init(colors: theColors, sizes: sizes)
     }
 }
-
+extension Dictionary where Value: Equatable {
+    func allKeys(forValue val: Value) -> [Key] {
+        return self.filter { $1 == val }.map { $0.0 }
+    }
+}
 extension Tartan {
     
     func createColorPattern() {
