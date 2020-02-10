@@ -73,7 +73,7 @@ extension TartanImageTypeService {
     func design() -> UIImage {
         if let i = self.images[ImageType.design] {
             return i }
-sleep(10)
+        sleep(10)
         self.layOut = LayOut(tartan: self.tartan)
         let zones:[(Int, UIColor)] = (self.layOut?.design.enumerated().reduce([]) {ar, el in
             return ar + [(1, el.element.colorForCode())] })!   //            .mirror()
