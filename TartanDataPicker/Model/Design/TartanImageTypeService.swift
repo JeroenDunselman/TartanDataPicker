@@ -27,6 +27,7 @@ class TartanImageTypeService {
 extension TartanImageTypeService {
     
     func preferredImage() -> UIImage {
+        
         for t in ImageType.allCases {
             if let image:UIImage = self.images[t]  {
                 print("\(t.rawValue)")
@@ -41,10 +42,10 @@ extension TartanImageTypeService {
             
             //launch build of .colorSet image
             DispatchQueue.global(qos: .default).async {
+//                sleep(10)
                 _ = self.colorSet()
             }
             return preferredImage()
-            
         }
         
         print("image failed")
@@ -54,18 +55,13 @@ extension TartanImageTypeService {
     }
     
     func colorSet() -> UIImage {
+        
         let zones:[(Int, UIColor)] = self.tartan.orderedColorCodes
             .enumerated().reduce([]) {ar , e in
                 let info:(zoneCount:Int, colorCount:Int) = self.tartan.colorScore[e.element]!
                     return ar + [(info.colorCount, e.element.colorForCode() )] }
-        //            .mirror() as! [(Int, UIColor)]
         
-//        let colors:Set<ColorCode> = self.tartan.colorTypes.valuedAsSet
-//        let zones:[(Int, UIColor)] = colors.enumerated().reduce([]) {ar , el in
-//            return ar + [(1, el.element.colorForCode())] }
-////            .mirror() as! [(Int, UIColor)]
-        
-        let result:UIImage = UIImage(zones2:zones)! //zones: [(Int, String)])
+        let result:UIImage = UIImage(colorSet:zones)! //zones: [(Int, String)])
         self.images[ImageType.colorSet] = result
 
         DispatchQueue.global(qos: .default).async {
@@ -77,21 +73,18 @@ extension TartanImageTypeService {
     func design() -> UIImage {
         if let i = self.images[ImageType.design] {
             return i }
-        sleep(10)
+sleep(10)
         self.layOut = LayOut(tartan: self.tartan)
         let zones:[(Int, UIColor)] = (self.layOut?.design.enumerated().reduce([]) {ar, el in
             return ar + [(1, el.element.colorForCode())] })!   //            .mirror()
         
         if zones.count > 0 {
             let result:UIImage = UIImage(zones:zones)!
-            //            DispatchQueue.main.async() { () -> Void in
-            //                print("sTypes \(self.sTypes)")
             self.images[ImageType.design] = result
-            //            }
             //launch build of .tartan image
-            //            DispatchQueue.global(qos: .default).async {
-            //                _ = self.build()
-            //            }
+//                        DispatchQueue.global(qos: .default).async {
+//                            _ = self.build()
+//                        }
             return preferredImage()
         }
         
@@ -100,16 +93,19 @@ extension TartanImageTypeService {
     }
     
     func build() -> UIImage? {
-        //        image = self.layOut.visualizeTartan()
-        return images[ImageType.tartan]
+        if let i = self.images[ImageType.tartan] {
+            return i }        //
+        let result:UIImage = self.layOut!.visualizeTartan()
+        self.images[ImageType.tartan] = result
+        return preferredImage()
     }
 }
 extension UIImage {
     
-    public convenience init?(zones2: [(Int, UIColor)]) {
+    public convenience init?(colorSet: [(Int, UIColor)]) {
         let imgRect = CGRect(origin: .zero, size: CGSize(width: 100, height: 100))
         
-        let xy = 100 / zones2.count //* (100 / zones.count)
+        let xy = 100 / colorSet.count //* (100 / zones.count)
         
         func runShapeAt(_ at:Int, _ color:UIColor, _ size:Int) {
             
@@ -119,8 +115,9 @@ extension UIImage {
         
         func fillShape(current: Coordinate, width: Int) {
             //Draw 1 layout shap
-            let one:CGFloat = CGFloat(width)
-            let rSize = CGSize(width: one, height: CGFloat(xy) )
+            let zoneSize:CGFloat = CGFloat(width)
+            let rSize = CGSize(width: zoneSize, height: CGFloat(xy) )
+//            let rSize = CGSize(width: zoneSize, height: CGFloat(xy) * CGFloat(zones2.count) * CGFloat(0.6108))
             
             let rect = CGRect(origin: CGPoint(x:current.x, y:current.y), size: rSize)
             UIRectFill(rect)
@@ -128,9 +125,9 @@ extension UIImage {
         
         UIGraphicsBeginImageContextWithOptions(imgRect.size, false, 0.0)
         
-        _ = (0..<zones2.count).map { i in
+        _ = (0..<colorSet.count).map { i in
             //            print("imaging colorShape for.. \()")
-            runShapeAt(i, zones2[i].1, zones2[i].0)
+            runShapeAt(i, colorSet[i].1, colorSet[i].0)
         }
         
         let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -156,7 +153,7 @@ extension UIImage {
         }
         
         func fillShape(current: Coordinate) {
-            //Draw 1 layout shap
+            //Draw 1 layout shape
             let one:CGFloat = CGFloat(xy)
             let rSize = CGSize(width: one, height: CGFloat(xy) * CGFloat(zones.count) * CGFloat(0.6108))
             

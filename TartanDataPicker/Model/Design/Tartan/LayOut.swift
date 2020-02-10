@@ -87,10 +87,10 @@ extension LayOut {
                         //                        DispatchQueue.main.async() { () -> Void in self.liveView.setNeedsDisplay()}
                     }
                 }
-                DispatchQueue.main.async() { () -> Void in
+//                DispatchQueue.main.async() { () -> Void in
                     self.rowStore[x] = column
                     //                    print("row \(x) finished as \(self.store.count) in \(size)")
-                }
+//                }
             }
         }
     }

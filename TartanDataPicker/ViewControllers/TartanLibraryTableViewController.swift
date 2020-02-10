@@ -35,9 +35,13 @@ class TartanLibraryTableViewController: DrillViewController { //UITableViewContr
         let cell: TVCell = tableView.dequeueReusableCell(withIdentifier: "TartanCell", for: indexPath) as! TVCell
         let row = indexPath.row
 
-        let entry = model.indexedEntries[row]
+        let entry:Entry = model.indexedEntries[row]
         cell.definitionLabel.text = "\(entry.definition.info["definition"] ?? "(definition unavailable)")"
+        cell.contentView.backgroundColor = entry.cellBackgroundColor()
+        
         cell.label.text = "\(entry.title)"
+//        cell.backgroundColor = entry.
+      
         let t:UIImage = entry.images!.preferredImage()
         cell.cellImage!.image = t
         

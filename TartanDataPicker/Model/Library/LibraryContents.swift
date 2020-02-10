@@ -16,7 +16,7 @@ class LibraryContents: NSObject {
     public var publicTitles: [String] = []
     
     func checkOutPublicContents() {
-        publicContents = library.filter({($0.value.definition.tartan.colors.count) < 5 })
+        publicContents = library.filter({($0.value.definition.tartan.sumSizes) < 75 })
         //.filter({($0.value.title == "Stewart Old")})
     }
     

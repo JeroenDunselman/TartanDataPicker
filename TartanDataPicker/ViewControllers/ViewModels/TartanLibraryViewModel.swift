@@ -13,7 +13,10 @@ class TartanLibraryViewModel {
     public var client: TartanLibraryTableViewController?
     
     init() {
+        
         indexedEntries = Array(library.values.makeIterator())
+//            .sorted {$0.definition.tartan.orderedColorCodes<$1.definition.tartan.orderedColorCodes}
+
     }
     
     func resetClientData() {
@@ -22,9 +25,7 @@ class TartanLibraryViewModel {
         print("reloadData()")
     }
     
-    public func refreshContent() {
-    }
-
+    public func refreshContent() {  }
 
 }
 

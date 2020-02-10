@@ -18,6 +18,14 @@ class Entry:Equatable {
         self.definition = definition
         self.images = TartanImageTypeService(self)
     }
+    
+    func cellBackgroundColor() -> UIColor {
+        if let definition = definition.info["definition"] as? String, definition == "Restricted" {
+            return UIColor.clear
+        }  else {
+            return UIColor.groupTableViewBackground
+        }
+    }
 }
 
 extension Entry:Hashable {

@@ -25,7 +25,7 @@ class Tartan {
     
     var colorCodes:[String] = []
     var colorTypes:[ColorCode] = []
-    var orderedColorCodes:[ColorCode] = [], colorScore:[ColorCode:(zoneCount:Int, colorCount:Int)] = [:]
+    var orderedColorCodes:[ColorCode] = [ColorCode](), colorScore:[ColorCode:(zoneCount:Int, colorCount:Int)] = [:]
     
     init() {}
 
@@ -42,11 +42,14 @@ class Tartan {
     }
 
     func analyze() {
-        var lastOccurrence:[ColorCode:Int] = [:]
-        _ = colorTypes.enumerated().map {i, e in lastOccurrence[e] = i}
-        let sorted:[Int] = lastOccurrence.values.sorted().reversed()
+        
+        //lastOccurrenceOfColorCodeInDefinition
+        var last:[ColorCode:Int] = [:]
+        _ = colorTypes.enumerated().map {i, e in last[e] = i}
+        
+        let sorted:[Int] = last.values.sorted().reversed()
         self.orderedColorCodes = sorted.reduce([]) { ar, el in
-            return ar + [lastOccurrence.allKeys(forValue: el)[0]] }
+            return ar + [last.allKeys(forValue: el)[0]] }
         
         _ = self.orderedColorCodes.map { color in
             var zoneCount:Int = 0
