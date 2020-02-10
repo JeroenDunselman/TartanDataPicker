@@ -10,9 +10,7 @@
 		A917AE1923ED96530037D15B /* TartanLibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917AE1823ED96530037D15B /* TartanLibraryTableViewController.swift */; };
 		A917AE1B23ED96A50037D15B /* DrillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917AE1A23ED96A50037D15B /* DrillViewController.swift */; };
 		A917AE1D23ED96ED0037D15B /* TartanLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917AE1C23ED96ED0037D15B /* TartanLibraryViewModel.swift */; };
-		A917AE1F23ED97250037D15B /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917AE1E23ED97250037D15B /* AssetViewController.swift */; };
 		A917AE2123ED98970037D15B /* TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917AE2023ED98970037D15B /* TVCell.swift */; };
-		A945360E23EE32970074B2B0 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945360D23EE32970074B2B0 /* ImageRequest.swift */; };
 		A945361023EE32D40074B2B0 /* LayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945360F23EE32D40074B2B0 /* LayOut.swift */; };
 		A945361223EE33C30074B2B0 /* Tartan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945361123EE33C30074B2B0 /* Tartan.swift */; };
 		A945361423EE35390074B2B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945361323EE35390074B2B0 /* Extensions.swift */; };
@@ -21,17 +19,14 @@
 		A95F1F1623EB2190001FA203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95F1F1523EB2190001FA203 /* Assets.xcassets */; };
 		A95F1F1923EB2190001FA203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95F1F1723EB2190001FA203 /* LaunchScreen.storyboard */; };
 		A95F1F2423EB2190001FA203 /* TartanDataPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F2323EB2190001FA203 /* TartanDataPickerTests.swift */; };
-		A95F1F3A23EB24F9001FA203 /* TitleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F3523EB24F9001FA203 /* TitleService.swift */; };
 		A95F1F3E23EB2545001FA203 /* ContentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F3D23EB2544001FA203 /* ContentTypes.swift */; };
 		A95F1F4023EB2699001FA203 /* LibraryContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F3F23EB2699001FA203 /* LibraryContents.swift */; };
 		A95F1F4323EB6A0E001FA203 /* TartanColorCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F1F4223EB6A0E001FA203 /* TartanColorCoding.swift */; };
+		A979F83523F1BA4200E3FC88 /* ZPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979F83423F1BA4200E3FC88 /* ZPattern.swift */; };
 		A9A5A6BB23EED9A2001CF16D /* TartanImageTypeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5A6BA23EED9A2001CF16D /* TartanImageTypeService.swift */; };
 		A9A5A6BD23EED9D0001CF16D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5A6BC23EED9D0001CF16D /* Entry.swift */; };
-		A9C635D023EDF254002EDBAA /* FilteredTartanImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C635CF23EDF254002EDBAA /* FilteredTartanImageService.swift */; };
-		A9C635D223EDF300002EDBAA /* TartanImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C635D123EDF300002EDBAA /* TartanImageService.swift */; };
 		A9DA655C23F0A82C00DF0F4B /* TartanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA655B23F0A82C00DF0F4B /* TartanLibrary.swift */; };
 		A9DA655E23F0A86000DF0F4B /* tartandefs components as row.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9DA655D23F0A86000DF0F4B /* tartandefs components as row.rtf */; };
-		A9DA656023F0A86F00DF0F4B /* ZPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA655F23F0A86F00DF0F4B /* ZPattern.swift */; };
 		A9DA656223F0A87800DF0F4B /* ColorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA656123F0A87800DF0F4B /* ColorMap.swift */; };
 		A9DA656423F0A9E200DF0F4B /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA656323F0A9E200DF0F4B /* FileParser.swift */; };
 /* End PBXBuildFile section */
@@ -50,9 +45,7 @@
 		A917AE1823ED96530037D15B /* TartanLibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanLibraryTableViewController.swift; sourceTree = "<group>"; };
 		A917AE1A23ED96A50037D15B /* DrillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillViewController.swift; sourceTree = "<group>"; };
 		A917AE1C23ED96ED0037D15B /* TartanLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanLibraryViewModel.swift; sourceTree = "<group>"; };
-		A917AE1E23ED97250037D15B /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		A917AE2023ED98970037D15B /* TVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCell.swift; sourceTree = "<group>"; };
-		A945360D23EE32970074B2B0 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
 		A945360F23EE32D40074B2B0 /* LayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayOut.swift; sourceTree = "<group>"; };
 		A945361123EE33C30074B2B0 /* Tartan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tartan.swift; sourceTree = "<group>"; };
 		A945361323EE35390074B2B0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -65,17 +58,14 @@
 		A95F1F1F23EB2190001FA203 /* TartanDataPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TartanDataPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95F1F2323EB2190001FA203 /* TartanDataPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanDataPickerTests.swift; sourceTree = "<group>"; };
 		A95F1F2523EB2190001FA203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A95F1F3523EB24F9001FA203 /* TitleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleService.swift; path = TartanDataPicker/niu/TitleService.swift; sourceTree = SOURCE_ROOT; };
 		A95F1F3D23EB2544001FA203 /* ContentTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTypes.swift; sourceTree = "<group>"; };
 		A95F1F3F23EB2699001FA203 /* LibraryContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryContents.swift; sourceTree = "<group>"; };
 		A95F1F4223EB6A0E001FA203 /* TartanColorCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanColorCoding.swift; sourceTree = "<group>"; };
+		A979F83423F1BA4200E3FC88 /* ZPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPattern.swift; sourceTree = "<group>"; };
 		A9A5A6BA23EED9A2001CF16D /* TartanImageTypeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanImageTypeService.swift; sourceTree = "<group>"; };
 		A9A5A6BC23EED9D0001CF16D /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		A9C635CF23EDF254002EDBAA /* FilteredTartanImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredTartanImageService.swift; sourceTree = "<group>"; };
-		A9C635D123EDF300002EDBAA /* TartanImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TartanImageService.swift; sourceTree = "<group>"; };
 		A9DA655B23F0A82C00DF0F4B /* TartanLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TartanLibrary.swift; sourceTree = "<group>"; };
 		A9DA655D23F0A86000DF0F4B /* tartandefs components as row.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "tartandefs components as row.rtf"; sourceTree = "<group>"; };
-		A9DA655F23F0A86F00DF0F4B /* ZPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPattern.swift; sourceTree = "<group>"; };
 		A9DA656123F0A87800DF0F4B /* ColorMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorMap.swift; sourceTree = "<group>"; };
 		A9DA656323F0A9E200DF0F4B /* FileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +116,6 @@
 				A95F1F1523EB2190001FA203 /* Assets.xcassets */,
 				A95F1F1723EB2190001FA203 /* LaunchScreen.storyboard */,
 				A95F1F1A23EB2190001FA203 /* Info.plist */,
-				A9A5A6BE23EEF380001CF16D /* niu */,
 			);
 			path = TartanDataPicker;
 			sourceTree = "<group>";
@@ -181,25 +170,13 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		A9A5A6BE23EEF380001CF16D /* niu */ = {
-			isa = PBXGroup;
-			children = (
-				A9DA655F23F0A86F00DF0F4B /* ZPattern.swift */,
-				A917AE1E23ED97250037D15B /* AssetViewController.swift */,
-				A945360D23EE32970074B2B0 /* ImageRequest.swift */,
-				A9C635D123EDF300002EDBAA /* TartanImageService.swift */,
-				A9C635CF23EDF254002EDBAA /* FilteredTartanImageService.swift */,
-				A95F1F3523EB24F9001FA203 /* TitleService.swift */,
-			);
-			path = niu;
-			sourceTree = "<group>";
-		};
 		A9A5A6BF23EEF3CC001CF16D /* Tartan */ = {
 			isa = PBXGroup;
 			children = (
 				A945360F23EE32D40074B2B0 /* LayOut.swift */,
 				A945361123EE33C30074B2B0 /* Tartan.swift */,
 				A9DA656123F0A87800DF0F4B /* ColorMap.swift */,
+				A979F83423F1BA4200E3FC88 /* ZPattern.swift */,
 			);
 			path = Tartan;
 			sourceTree = "<group>";
@@ -325,28 +302,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C635D023EDF254002EDBAA /* FilteredTartanImageService.swift in Sources */,
-				A9DA656023F0A86F00DF0F4B /* ZPattern.swift in Sources */,
 				A917AE1B23ED96A50037D15B /* DrillViewController.swift in Sources */,
 				A917AE2123ED98970037D15B /* TVCell.swift in Sources */,
 				A917AE1D23ED96ED0037D15B /* TartanLibraryViewModel.swift in Sources */,
 				A9DA655C23F0A82C00DF0F4B /* TartanLibrary.swift in Sources */,
 				A945361023EE32D40074B2B0 /* LayOut.swift in Sources */,
-				A95F1F3A23EB24F9001FA203 /* TitleService.swift in Sources */,
-				A945360E23EE32970074B2B0 /* ImageRequest.swift in Sources */,
 				A9A5A6BB23EED9A2001CF16D /* TartanImageTypeService.swift in Sources */,
 				A95F1F0F23EB2189001FA203 /* AppDelegate.swift in Sources */,
-				A9C635D223EDF300002EDBAA /* TartanImageService.swift in Sources */,
 				A917AE1923ED96530037D15B /* TartanLibraryTableViewController.swift in Sources */,
 				A945361423EE35390074B2B0 /* Extensions.swift in Sources */,
 				A95F1F3E23EB2545001FA203 /* ContentTypes.swift in Sources */,
+				A979F83523F1BA4200E3FC88 /* ZPattern.swift in Sources */,
 				A9DA656423F0A9E200DF0F4B /* FileParser.swift in Sources */,
 				A9A5A6BD23EED9D0001CF16D /* Entry.swift in Sources */,
 				A9DA656223F0A87800DF0F4B /* ColorMap.swift in Sources */,
 				A95F1F4023EB2699001FA203 /* LibraryContents.swift in Sources */,
 				A95F1F4323EB6A0E001FA203 /* TartanColorCoding.swift in Sources */,
 				A945361223EE33C30074B2B0 /* Tartan.swift in Sources */,
-				A917AE1F23ED97250037D15B /* AssetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
