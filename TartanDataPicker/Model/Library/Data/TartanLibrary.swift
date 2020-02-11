@@ -62,6 +62,7 @@ class TartanLibrary: NSObject {
      
         //Create design
         entry.tartan = Tartan(colorCodes: colorCodes, sizes: sizes, palet: palet)
+        //entry.tartan.analyze
         entry.tartan.info = entry.info
         return entry
         

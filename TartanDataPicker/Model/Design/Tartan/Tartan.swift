@@ -41,9 +41,10 @@ class Tartan {
 //        print("zones/size: \(self.sumSizes)/\(sizes.count)")
     }
 
+    //    get colorScore for orderedColorCodes
     func analyze() {
         
-        //lastOccurrenceOfColorCodeInDefinition
+        //last Occurrence Of ColorCode In Definition
         var last:[ColorCode:Int] = [:]
         _ = colorTypes.enumerated().map {i, e in last[e] = i}
         
@@ -52,14 +53,10 @@ class Tartan {
             return ar + [last.allKeys(forValue: el)[0]] }
         
         _ = self.orderedColorCodes.map { color in
-            var zoneCount:Int = 0
+            let zoneCount:Int = self.colorTypes.filter({ $0 == color }).count
             var colorCount:Int = 0
             _ = self.colorTypes.enumerated().map { i, e in
-                if e == color {
-                    zoneCount = zoneCount + 1
-                    colorCount = colorCount + sizes[i]
-                }
-            }
+                if e == color { colorCount = colorCount + sizes[i] }}
             colorScore[color] = ((zoneCount:zoneCount, colorCount:colorCount))
         }
     }
