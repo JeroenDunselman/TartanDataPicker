@@ -6,5 +6,5 @@ There's no testing at all. Instead I have been wasting time solving other proble
 Sorry about that. I would be honoured to have another go if asked.
 
 The app reads data from a text file and tries to create and show tartan pictures (a pet subject). 
-Working but not quite finished.
+Working but not quite finished. Please refer to the Presentation branch.
 
