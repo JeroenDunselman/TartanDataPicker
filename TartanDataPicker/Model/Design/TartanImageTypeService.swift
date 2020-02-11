@@ -91,7 +91,7 @@ extension TartanImageTypeService {
         //        return images[ImageType.colorSet]!
         return preferredImage()
     }
-    
+
     func build() -> UIImage? {
         if let i = self.images[ImageType.tartan] {
             return i }        //

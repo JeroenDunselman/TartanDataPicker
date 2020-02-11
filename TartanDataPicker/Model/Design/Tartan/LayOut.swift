@@ -137,7 +137,7 @@ extension LayOut {
         
         //set imgsize to repeats of defsize
         let repeatSize = 4 * zFactor
-        let definitionSize = self.tartan?.sumSizes
+        let definitionSize = self.tartan?.weight
         let imageSize = repeatSize*definitionSize!
         
         //Draw colorShapes into image

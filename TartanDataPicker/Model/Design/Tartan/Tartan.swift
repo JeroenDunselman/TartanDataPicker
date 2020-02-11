@@ -18,7 +18,7 @@ class Tartan {
     var sett:[Int] = []
     
     var info:[String:Any] = [String:Any]()
-    public var sumSizes: Int = 0
+    public var weight: Int = 0
     
     public var colorSet:Set<Int> = []
     public var colorSetCompact:(layOut:[Int], sortString:String) = ([], "")
@@ -36,7 +36,7 @@ class Tartan {
         self.colorMap = palet
         
         self.sizes = sizes
-        self.sumSizes = self.sizes.map { $0 }.reduce(0, +)
+        self.weight = self.sizes.map { $0 }.reduce(0, +)
         analyze()
 //        print("zones/size: \(self.sumSizes)/\(sizes.count)")
     }
@@ -66,14 +66,14 @@ class Tartan {
         self.createColorPattern()
         
         self.sizes = sizes
-        self.sumSizes = self.sizes.map { $0 }.reduce(0, +)
+        self.weight = self.sizes.map { $0 }.reduce(0, +)
     }
     
     init(sett:[Int]) { //[intThreadColor]
         self.colorSet = sett.valuedAsSet
         //        self.randomizeColorSet()
         
-        self.sumSizes = sett.count
+        self.weight = sett.count
         self.sett = sett.mirror() as! [Int] //mirrorStructure(definition:sett)
     }
     

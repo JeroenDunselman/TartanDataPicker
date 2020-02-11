@@ -95,9 +95,7 @@ class TartanLibraryTableViewController: DrillViewController { //UITableViewContr
     }
 }
 
-extension TartanLibraryTableViewController {
-    //    View fresh batch.
-    
+extension TartanLibraryTableViewController {    
     //    Trigger refresh from pull.
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         

@@ -15,8 +15,8 @@ class TartanLibraryViewModel {
     init() {
         
         indexedEntries = Array(library.values.makeIterator())
-//            .sorted {$0.definition.tartan.orderedColorCodes<$1.definition.tartan.orderedColorCodes}
-
+//            .sorted {
+//            $0.definition.tartan.weight<$1.definition.tartan.weight }
     }
     
     func resetClientData() {
